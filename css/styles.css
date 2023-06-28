@@ -22,7 +22,7 @@ body{
     margin: 0 auto;
 }
 :root{
-    --accent-color:#F7654A;
+    --accent-color:#9c4738;
     --dark-color:#404149;
     --gray-color:#999999;
     --white-color:#FFFFFF;
@@ -343,9 +343,10 @@ body{
 }
 .question_p {
     margin-bottom: 40px;
-    color: var(--gray-color);
+    color: var(--dark-color);
     max-width: 730px;
     animation: show 1s ease;
+    font-size: 16px;
 }/*
 .question_h3.close{
     margin-bottom: 33px;
@@ -620,11 +621,11 @@ body{
   }
   
   .sidenav li > a.btn:hover, .sidenav li > a.btn-large:hover, .sidenav li > a.btn-small:hover, .sidenav li > a.btn-large:hover {
-    background-color: #2bbbad;
+    background-color: var(--accent-color);
   }
   
   .sidenav li > a.btn-floating:hover {
-    background-color: #26a69a;
+    background-color: #3b8780;
   }
   
   .sidenav li > a > i,
@@ -839,7 +840,7 @@ nav ul a.btn > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.b
     list-style-type: none;
   }  
   #slide-out a {
-    color: #10491e;   /*color: #039be5; /* Цвет шрифта*/
+    color: var(--accent-color);   /*color: #039be5; /* Цвет шрифта*/
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
     background-color: #fff;/* КНОПОК*/
