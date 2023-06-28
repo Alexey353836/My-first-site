@@ -54,7 +54,7 @@ body{
 /* Header */
 .header {
     min-height: 740px;
-    background-image: url(../img/Ferst\ screen\ bg.jpg);
+    background-image: url(../img/first-screen-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -1374,9 +1374,6 @@ btn-flat {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
      }
-     .burger{
-        left: %;
-    }
  }
 
  @media only screen and (min-width: 993px) {
