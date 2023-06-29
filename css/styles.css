@@ -56,25 +56,26 @@ body{
 /* Header */
 .header {
     min-height: 600px;
-    background-image:url(../img/tractor.png); 
+    background-image:url('../img/first-screen-bg.jpg'); 
     background-repeat: no-repeat;
-    background-size: contain;
-    background-color:var(--header-background-color)
+    background-size: cover;
+    margin: 0 auto;
 }
 .header__title {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     padding-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 70px;
 }
 .logo {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
 }
 .burger{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
     padding: 0;
     background-color: var(--accent-color);
@@ -86,6 +87,7 @@ body{
     position: fixed;
     z-index: 1;
     border: #fff solid 1px;
+    border-radius: 5px;
 }
 /* Пожложка для бургераб, чтобы он ьыл липким о сохранилась адаптивность */
 .right{
@@ -116,17 +118,31 @@ body{
 }
 .h1 {
     font-weight: 500;
-    font-size: 70px;
+    font-size: 60px;
     text-align: center;
     letter-spacing: 0.02em;
-    Line-height: 160px;
+    Line-height: x;
     text-transform: uppercase;
-    max-width: px;
+    max-width: 800px;
     margin: 0 auto 10px;
     color: #DFDFDF;
     font-style: normal;
     text-shadow: 5px 5px 5px #000;
-    background-color: rgba(135, 107, 236, 0.1); 
+    
+    /* background-color: rgba(135, 107, 236, 0.1);  */
+}
+.h3{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white-color);
+    max-width: 734px;
+    margin: 0 auto;
+    font-style: normal;
+    padding: 60px;
+    text-shadow: 5px 5px 5px #000;
 }
 .h4 {
     font-weight: 400;
@@ -139,7 +155,7 @@ body{
     margin: 0 auto;
     font-style: normal;
     text-shadow: 5px 5px 5px #000;
-    background-color: rgba(135, 107, 236, 0.1); 
+    /* background-color: rgba(135, 107, 236, 0.1);  */
 }
 /* About */
 .about{
@@ -226,7 +242,7 @@ body{
 }
 /* REQUEST */
 .request {
-  background-color: var(--header-background-color);
+  background-color: var(--accent-color);
    margin-top: 60px;
   }
 .request_flax {
@@ -441,7 +457,7 @@ body{
 }
 .reviews-p {
     max-width: 298px;
-    color:var(--dark-color)
+    color:var(--dark-color);
     margin-top: -40px;
     font-size: 20px;
 }
@@ -774,7 +790,6 @@ body{
   .breadcrumb [class^="mdi-"], .breadcrumb [class*="mdi-"],
   .breadcrumb i.material-icons {
     display: inline-block;
-    float: left;
     font-size: 24px;
   }
   /* This is needed for some mobile phones to display the Google Icon font properly */
@@ -1432,6 +1447,13 @@ btn-flat {
     
   }
 @media screen and (max-width: 768px){
+  .header {
+    min-height: 470px;
+    background-image:url(); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color:var(--accent-color)
+}
     .about{
         padding-top: 0px;
         margin-top: 0;
@@ -1445,9 +1467,6 @@ btn-flat {
       top:0;
       position: relative;
   }
-    .project-h2{
-      margin-bottom: ;
-    }
     .about__flex{
         flex-direction: column;
         align-items: center;
@@ -1496,7 +1515,7 @@ btn-flat {
       font-size: 45px;
     }
     .header__title{
-        margin-bottom: 40px;
+        margin-bottom: 90px;
         padding-top: 0;
     }
     .logo {
