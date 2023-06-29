@@ -28,6 +28,7 @@ body{
     --gray-color:#999999;
     --white-color:#FFFFFF;
     --background-color:#E5E5E5;
+    --header-background-color: #9180f3;
 }
 .text-h2{
     font-weight: 500;
@@ -54,17 +55,18 @@ body{
 
 /* Header */
 .header {
-    min-height: 740px;
-    background-image: url(../img/first-screen-bg.jpg);
+    min-height: 600px;
+    background-image:url(../img/tractor.png); 
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-color:var(--header-background-color)
 }
 .header__title {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     padding-top: 20px;
-    margin-bottom: 112px;
+    margin-bottom: 10px;
 }
 .logo {
     width: 60px;
@@ -107,22 +109,24 @@ body{
     width: 21px;
     height: 3px;
     background-color: #fff;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
 }
 .burger__line:last-child{
     margin-bottom: 0;
 }
 .h1 {
     font-weight: 500;
-    font-size: 64px;
+    font-size: 70px;
     text-align: center;
     letter-spacing: 0.02em;
-    Line-height: 95px;
+    Line-height: 160px;
     text-transform: uppercase;
-    max-width: 734px;
-    margin: 0 auto 15px;
-    color: var(--white-color);
+    max-width: px;
+    margin: 0 auto 10px;
+    color: #DFDFDF;
     font-style: normal;
+    text-shadow: 5px 5px 5px #000;
+    background-color: rgba(135, 107, 236, 0.1); 
 }
 .h4 {
     font-weight: 400;
@@ -134,6 +138,8 @@ body{
     max-width: 734px;
     margin: 0 auto;
     font-style: normal;
+    text-shadow: 5px 5px 5px #000;
+    background-color: rgba(135, 107, 236, 0.1); 
 }
 /* About */
 .about{
@@ -150,7 +156,7 @@ body{
     max-width: 1110px;
     width: 100%;
     min-height: 300px;
-    padding: 57px 130px 0px;
+    padding: 42px 130px 0px;
 }
 .about__grid{
     display: grid;
@@ -160,13 +166,15 @@ body{
 }
 .about__grid-item{
     text-align: center;
-    width: 190px;
+    max-width: 190px;
+    margin-top: 20px;
 }
 .about__h4{
     font-weight: 500;
     font-size: 72px;
     color: var(--accent-color);
     margin-bottom: 6px;
+
 }
 .about__h5{
     font-weight: 500;
@@ -182,10 +190,11 @@ body{
 }
 .container__about{
     max-width: 1110px;
-    margin: 0 auto;
+    margin: 30px auto 0;
 }
 .project-h2 {
     text-align: center;
+    margin-top: -60px;
     margin-bottom: 50px;
 }
 .about__flex {
@@ -217,8 +226,8 @@ body{
 }
 /* REQUEST */
 .request {
-   background-color: var(--accent-color);
-   margin-top: 124px;
+  background-color: var(--header-background-color);
+   margin-top: 60px;
   }
 .request_flax {
     display: flex;
@@ -280,17 +289,17 @@ body{
 }
 /* SERVICES */
 .services {
-    margin-top: 154px;
+    margin-top: 60px;
 }
 .services_maintext {
     text-align: center;
-    margin-bottom: 54px;
+    margin-bottom: 0px;
 }
 .services_gred {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 30px;
+    gap: 0px;
 }
 .services_item {
     min-height: 250px;
@@ -316,7 +325,7 @@ body{
 /* PARTFOLIO */
 .partfolio {
     max-width: 1920px;
-    padding-top: 150px;
+    padding-top: 14px;
     margin: 0 auto;
 }
 .partfolio_gred {
@@ -329,8 +338,11 @@ body{
 }
 /* QUESTIPONS */
 .question {
-    padding-top: 150px;
+    padding-top: 70px;
     padding-bottom: 110px;
+}
+.question_items{
+  margin-top: -20px;
 }
 .question .text-h2{
     margin-bottom: 50px;
@@ -373,13 +385,13 @@ body{
 .partners {
     min-height: 364px;
     background-color: var(--dark-color);
-    padding-top: 150px;
+    padding-top: 66px;
     margin: 0 auto;
 }
 .partners-h2 {
     color: var(--white-color);
     text-align: center;
-    margin-top: -50px;
+    margin-top: 23px;
 }
 .partners_items_flax {
     display: flex;
@@ -1336,6 +1348,7 @@ btn-flat {
     .about__grid{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: (2,1fr);
+        gap:0;
     }
     .container{
         padding: 15px;
@@ -1343,6 +1356,9 @@ btn-flat {
     .about{
         padding-top: 500px;
      }
+     .info{
+      padding: 57px 0px 0px;
+  }
      .request_flax{
         flex-wrap: wrap;
     }
@@ -1360,9 +1376,7 @@ btn-flat {
     .contacts {
         padding-bottom: 130px;
     }
-    .partfolio_gred {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  
     .partners_items_flax {
         justify-content: center;
          margin-right: 0px;
@@ -1418,23 +1432,21 @@ btn-flat {
     
   }
 @media screen and (max-width: 768px){
-    .about__grid{
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: (4,1fr);
-    }
-    .info{
-        position:relative ;
-        top: 0;
-        padding: 57px 0px 0px;
-    }
-    .h1{
-        font-size: 50px;
-    }
     .about{
         padding-top: 0px;
+        margin-top: 0;
      }
      .container__about{
-      padding: 0 5px 0 5px;
+      padding: 0px 5px 0 5px;
+      margin-top: -30px;
+    }
+    .info{
+      padding: 40px 0px 0px;
+      top:0;
+      position: relative;
+  }
+    .project-h2{
+      margin-bottom: ;
     }
     .about__flex{
         flex-direction: column;
@@ -1447,7 +1459,7 @@ btn-flat {
     .about__flex-item:last-child{
         margin-bottom: 0;
     }
-    .services_gred {
+   .services_gred {
         grid-template-columns: repeat(1, 1fr);
     }
     .partfolio_gred {
@@ -1477,8 +1489,14 @@ btn-flat {
     }
 }
 @media screen and (max-width: 500px){
+    .header{
+      min-height:700px;
+    }
+    .h1{
+      font-size: 45px;
+    }
     .header__title{
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         padding-top: 0;
     }
     .logo {
@@ -1492,12 +1510,10 @@ btn-flat {
     .h4{
       margin-top: 30px;
     }
-    .about__grid{
-      gap: 0px;
-  }
+    
     .about__h4{
         font-weight: 500;
-        font-size: 50px;
+        font-size: 35px;
         color: var(--accent-color);
         margin-bottom: 0px;
     }
@@ -1507,11 +1523,14 @@ btn-flat {
       text-transform: none;
       margin-bottom: 57px;
   }
+  .project-h2{
+    font-size: 38px;
+  }
   .project-p {
     font-size: 22px;
   }
     .about__h5{
-        font-size: 35px;
+        font-size: 30px;
   }
   .request {
     margin-top: 60px;
@@ -1558,11 +1577,12 @@ btn-flat {
 .partners_items_flax {
   display: flex;
   padding-top: 8px;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .partners-h2 {
   margin-top: -40px;
+ 
 }
 .reviews {
   padding: 60px 0 0px;
@@ -1570,13 +1590,16 @@ btn-flat {
 .reviews_item{
   margin-top: -10px;
 }
-
+.reviews-h2{
+  margin-bottom: 20px;
+}
 .reviews-h4 {
-  padding-top: 18px;
+  padding-top: 20px;
   letter-spacing: 0.42px;
   text-transform:capitalize;
   font-size: 23px;  
-}
+ }
+
 .contacts {
   padding: 60px 0 60px;
 }
